@@ -17,16 +17,16 @@
   <%= label_tag("Name") %>
   <%= text_field(:student, :name) %>
   <br>
-  <%= label_tag(:roll, "Mobile") %>
+  <%= label_tag("Mobile") %>
   <%= text_field(:student, :mobile) %>
   <br>
-  <%= label_tag(:roll, "Branch") %>
+  <%= label_tag("Branch") %>
   <%= text_field(:student, :branch) %>
   <br>
-  <%= label_tag(:roll, "Year") %>
+  <%= label_tag("Year") %>
   <%= text_field(:student, :year) %>
   <br>
-  <%= label_tag(:roll, "Date of Birth") %>
+  <%= label_tag("Date of Birth") %>
   <%= date_field(:student, :d_o_b) %>
   <br>
   <%= radio_button_tag(:gender, "male") %>
@@ -34,11 +34,12 @@
   <%= radio_button_tag(:gender, "female") %>
   <%= label_tag(:female, "Female") %>
   <br>
-  <%= label_tag(:roll, "City") %>
+  <%= label_tag("City") %>
   <%= text_field(:student, :city) %>
   <br>
-  <%= label_tag(:roll, "Password") %>
-  <%= password_field_tag(:student, :password) %>
+  <%= label_tag("Password") %>
+  <%= password_field(:student, :password) %>
+  <%= form.file_field :avatar %>
 
   <div class="actions">
     <%= form.submit %>
