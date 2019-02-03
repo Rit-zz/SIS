@@ -10,10 +10,18 @@
       </ul>
     </div>
   <% end %>
+
+  <label>Course ID</label>
+
  <%= text_field(:course, :c_id) %>
-<%= text_field(:course, :c_name) %>
-<%= text_field(:course, :duration) %>
-<%= text_field(:course, :fees) %>
+ <br>
+ <label>Course Name:</label>
+<%= text_field(:course, :c_name) %><br>
+<label>Course Duration</label>
+<%= text_field(:course, :duration) %><br>
+<label>Course Fees</label>
+<%= text_field(:course, :fees) %><br>
+<br>
   <div class="actions">
     <%= form.submit %>
   </div>
