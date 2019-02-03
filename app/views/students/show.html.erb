@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
-
+<h2>
 <%= @student.name %>
+</h2>
+<% if @student.avatar.attachment.present? %>
+  <img src="<%= rails_blob_path(@student.avatar, only_path: true)%>"  height='200' />
+<% end %>
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>

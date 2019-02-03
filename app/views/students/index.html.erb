@@ -1,9 +1,10 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Students</h1>
 
 <table border="1">
-  <thead>
+  <thead >
     <tr>
       <th> Roll No. </th>
       <th> Name </th>
@@ -11,7 +12,7 @@
       <th> Branch </th>
       <th> Year </th>
       <th> Date of Birth </th>
-      <th> Gender </th>
+      
       <th> City </th>
       <th colspan="4"></th>
     </tr>
@@ -26,7 +27,7 @@
         <td><%= student.branch %></td>
         <td><%= student.year %></td>
         <td><%= student.d_o_b %></td>
-        <td><%= student.gender %></td>
+        
         <td><%= student.city %></td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
