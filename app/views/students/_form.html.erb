@@ -1,3 +1,4 @@
+<div align="left">
 <%= form_with(model: student, local: true) do |form| %>
   <% if student.errors.any? %>
     <div id="error_explanation">
@@ -39,9 +40,11 @@
   <br>
   <%= label_tag("Password") %>
   <%= password_field(:student, :password) %>
+  <br>
   <%= form.file_field :avatar %>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+</div>
