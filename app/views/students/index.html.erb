@@ -20,7 +20,14 @@
   <tbody>
     <% @students.each do |student| %>
       <tr>
+        <td><%= student.roll %></td>
         <td><%= student.name %></td>
+        <td><%= student.mobile %></td>
+        <td><%= student.branch %></td>
+        <td><%= student.year %></td>
+        <td><%= student.d_o_b %></td>
+        <td><%= student.gender %></td>
+        <td><%= student.city %></td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
