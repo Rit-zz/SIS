@@ -11,8 +11,34 @@
     </div>
 
   <% end %>
-  
+  <%= label_tag("Roll Number") %>
+  <%= text_field(:student, :roll) %>
+  <br>
+  <%= label_tag("Name") %>
   <%= text_field(:student, :name) %>
+  <br>
+  <%= label_tag(:roll, "Mobile") %>
+  <%= text_field(:student, :mobile) %>
+  <br>
+  <%= label_tag(:roll, "Branch") %>
+  <%= text_field(:student, :branch) %>
+  <br>
+  <%= label_tag(:roll, "Year") %>
+  <%= text_field(:student, :year) %>
+  <br>
+  <%= label_tag(:roll, "Date of Birth") %>
+  <%= date_field(:student, :d_o_b) %>
+  <br>
+  <%= radio_button_tag(:gender, "male") %>
+  <%= label_tag(:male, "Male") %>
+  <%= radio_button_tag(:gender, "female") %>
+  <%= label_tag(:female, "Female") %>
+  <br>
+  <%= label_tag(:roll, "City") %>
+  <%= text_field(:student, :city) %>
+  <br>
+  <%= label_tag(:roll, "Password") %>
+  <%= password_field_tag(:student, :password) %>
 
   <div class="actions">
     <%= form.submit %>
